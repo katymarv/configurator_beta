@@ -1,0 +1,26 @@
+[1009/155224.664:ERROR:registration_protocol_win.cc(107)] CreateFile: Не удается найти указанный файл. (0x2)
+[1112/125743.805:FATAL:sandbox.cc(62)] Check failed: result == SBOX_ALL_OK. 
+Backtrace:
+	IsSandboxedProcess [0x0000000005219522+1270066]
+	IsSandboxedProcess [0x0000000005DD0872+13554818]
+	IsSandboxedProcess [0x00000000051A0B08+775960]
+	IsSandboxedProcess [0x00000000051A1E90+780960]
+	IsSandboxedProcess [0x000000000593F286+8765078]
+	v8::internal::SetupIsolateDelegate::SetupHeap [0x0000000004A081EB+24635307]
+	v8::internal::SetupIsolateDelegate::SetupHeap [0x0000000004A0743A+24631802]
+	v8::internal::SetupIsolateDelegate::SetupHeap [0x0000000004A07599+24632153]
+	ChromeMain [0x00000000013E11D3+467]
+	GetPakFileHashes [0x00000001400028B3+6323]
+	GetPakFileHashes [0x00000001400018D6+2262]
+	GetHandleVerifier [0x000000014015C572+854082]
+	BaseThreadInitThunk [0x000000007B6302B9+9]
+	RtlUserThreadStart [0x000000017006D9E4+132]
+	(No symbol) [0x0000000000000000]
+	EntryPoint [0x000000014015C5E0+0]
+	(No symbol) [0x0000000067FF0000]
+	(No symbol) [0x0000000000000000]
+Crash keys:
+  "switch-2" = "--user-data-dir=C:\users\crossover\AppData\Local\betaflight-conf"
+  "switch-1" = "--disable-features=nw2"
+  "num-switches" = "2"
+
